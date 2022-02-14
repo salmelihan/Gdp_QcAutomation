@@ -54,6 +54,12 @@ You need to download Chrome driver.
 - Copy (chromedriver.exe)
 - Paste the file (chromedriver.exe) to Python default path.
 
+## important links
+[Robot Framework documentation](https://robotframework.org/robotframework/#user-guide)
+[Robot Framework Selenium documentation](https://robotframework.org/SeleniumLibrary/SeleniumLibrary.html)
+[How to Find & Write Text, Contains, OR, AND](https://www.guru99.com/xpath-selenium.html)
+
+
 ## Author
 
 [**Saleh Almelinan**](https://www.linkedin.com/in/saleh-almelihan-9244315a/)
