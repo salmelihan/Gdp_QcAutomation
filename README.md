@@ -57,4 +57,3 @@ You need to download Chrome driver.
 ## Author
 
 [**Saleh Almelinan**](https://www.linkedin.com/in/saleh-almelihan-9244315a/)
- 
