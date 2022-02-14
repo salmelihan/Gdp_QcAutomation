@@ -1,5 +1,4 @@
-# How to setup and install Automation Tools
-
+# This repo include Demo project and guidline how setup and install Automation Tools
 
 ## Introduction
 
