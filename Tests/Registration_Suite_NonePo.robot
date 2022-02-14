@@ -1,6 +1,7 @@
 *** Settings ***
 Library          SeleniumLibrary
 Library     String
+Documentation       This test suite is not using page object model approach
 
 *** Test Cases ***
 User want to reginter

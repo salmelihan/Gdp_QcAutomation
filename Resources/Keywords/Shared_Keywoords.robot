@@ -2,7 +2,7 @@
 Library          SeleniumLibrary
 
 
-Resource        ../pageObjects/HomePage.robot
+Resource        ../pageObjects/HomePage_PageObjects.robot
 
 Variables       ../Project_Configration/Test_Configration.yaml
 

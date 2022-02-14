@@ -1,127 +1,189 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.9.0 on darwin)" generated="20220214 11:34:42.367" rpa="false" schemaversion="2">
-<suite id="s1" name="Login Suite" source="/Users/smelihan/PycharmProjects/Gdp_QcAutomation/Tests/Login_Suite.robot">
-<kw name="Begin web Test" library="Preference_Keyword" type="SETUP">
+<robot generator="Robot 4.1.3 (Python 3.9.0 on darwin)" generated="20220214 11:39:38.322" rpa="false" schemaversion="2">
+<suite id="s1" name="Registration Suite NonePo" source="/Users/smelihan/PycharmProjects/Gdp_QcAutomation/Tests/Registration_Suite_NonePo.robot">
+<test id="s1-t1" name="User want to reginter">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>about:blank</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220214 11:34:42.639" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20220214 11:34:42.639" endtime="20220214 11:34:44.799"/>
+<msg timestamp="20220214 11:39:38.583" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220214 11:39:38.583" endtime="20220214 11:39:40.764"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220214 11:34:44.800" endtime="20220214 11:34:44.941"/>
+<status status="PASS" starttime="20220214 11:39:40.765" endtime="20220214 11:39:40.943"/>
 </kw>
-<kw name="Set Selenium Speed" library="SeleniumLibrary">
-<arg>0.1</arg>
-<doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20220214 11:34:44.941" endtime="20220214 11:34:44.941"/>
-</kw>
-<status status="PASS" starttime="20220214 11:34:42.638" endtime="20220214 11:34:44.941"/>
-</kw>
-<test id="s1-t1" name="Test 1234">
-<kw name="Navigate to Home page" library="Shared_Keywoords">
 <kw name="Go To" library="SeleniumLibrary">
-<arg>${URL}</arg>
+<arg>https://demo.nopcommerce.com/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220214 11:34:44.943" level="INFO">Opening url 'https://demo.nopcommerce.com/'</msg>
-<status status="PASS" starttime="20220214 11:34:44.943" endtime="20220214 11:34:46.772"/>
+<msg timestamp="20220214 11:39:40.944" level="INFO">Opening url 'https://demo.nopcommerce.com/'</msg>
+<status status="PASS" starttime="20220214 11:39:40.944" endtime="20220214 11:39:43.083"/>
 </kw>
-<status status="PASS" starttime="20220214 11:34:44.943" endtime="20220214 11:34:46.772"/>
-</kw>
-<kw name="Navigate to Login page" library="Shared_Keywoords">
-<kw name="Login_Link" library="HomePage">
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
-<arg>Log in</arg>
+<arg>Register</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20220214 11:34:46.773" endtime="20220214 11:34:46.898"/>
+<status status="PASS" starttime="20220214 11:39:43.083" endtime="20220214 11:39:43.100"/>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
-<arg>Log in</arg>
+<arg>Register</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20220214 11:34:46.900" level="INFO">Clicking link 'Log in'.</msg>
-<status status="PASS" starttime="20220214 11:34:46.899" endtime="20220214 11:34:47.878"/>
+<msg timestamp="20220214 11:39:43.102" level="INFO">Clicking link 'Register'.</msg>
+<status status="PASS" starttime="20220214 11:39:43.100" endtime="20220214 11:39:43.788"/>
 </kw>
-<status status="PASS" starttime="20220214 11:34:46.773" endtime="20220214 11:34:47.879"/>
-</kw>
-<status status="PASS" starttime="20220214 11:34:46.772" endtime="20220214 11:34:47.879"/>
-</kw>
-<kw name="Enter Username" library="Login_Keyword">
-<kw name="Username_TextBox" library="Login_PageObjects">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>Email</arg>
+<arg>gender-male</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220214 11:34:47.880" endtime="20220214 11:34:48.118"/>
+<status status="PASS" starttime="20220214 11:39:43.789" endtime="20220214 11:39:43.812"/>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>Gender</arg>
+<arg>M</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20220214 11:39:43.812" level="INFO">Selecting 'M' from radio button 'Gender'.</msg>
+<status status="PASS" starttime="20220214 11:39:43.812" endtime="20220214 11:39:43.873"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>FirstName</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220214 11:39:43.873" endtime="20220214 11:39:43.896"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
-<arg>Email</arg>
-<arg>saleh@test.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220214 11:34:48.118" level="INFO">Typing text 'saleh@test.com' into text field 'Email'.</msg>
-<status status="PASS" starttime="20220214 11:34:48.118" endtime="20220214 11:34:48.544"/>
-</kw>
-<status status="PASS" starttime="20220214 11:34:47.880" endtime="20220214 11:34:48.544"/>
-</kw>
-<status status="PASS" starttime="20220214 11:34:47.879" endtime="20220214 11:34:48.544"/>
-</kw>
-<kw name="Enter Password" library="Login_Keyword">
-<kw name="Password_TextBox" library="Login_PageObjects">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>Password</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220214 11:34:48.545" endtime="20220214 11:34:48.780"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>Password</arg>
+<arg>FirstName</arg>
 <arg>Test</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220214 11:34:48.780" level="INFO">Typing text 'Test' into text field 'Password'.</msg>
-<status status="PASS" starttime="20220214 11:34:48.780" endtime="20220214 11:34:49.162"/>
+<msg timestamp="20220214 11:39:43.897" level="INFO">Typing text 'Test' into text field 'FirstName'.</msg>
+<status status="PASS" starttime="20220214 11:39:43.896" endtime="20220214 11:39:44.051"/>
 </kw>
-<status status="PASS" starttime="20220214 11:34:48.545" endtime="20220214 11:34:49.163"/>
-</kw>
-<status status="PASS" starttime="20220214 11:34:48.545" endtime="20220214 11:34:49.163"/>
-</kw>
-<kw name="Click on login Button" library="Login_Keyword">
-<kw name="Login_Button" library="Login_PageObjects">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>//button[@class='button-1 login-button']</arg>
+<arg>LastName</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220214 11:34:49.165" endtime="20220214 11:34:49.390"/>
+<status status="PASS" starttime="20220214 11:39:44.051" endtime="20220214 11:39:44.070"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>LastName</arg>
+<arg>Saleh</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220214 11:39:44.070" level="INFO">Typing text 'Saleh' into text field 'LastName'.</msg>
+<status status="PASS" starttime="20220214 11:39:44.070" endtime="20220214 11:39:44.146"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>DateOfBirthDay</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220214 11:39:44.146" endtime="20220214 11:39:44.164"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>DateOfBirthDay</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20220214 11:39:44.165" level="INFO">Selecting options from selection list 'DateOfBirthDay' by label 1.</msg>
+<status status="PASS" starttime="20220214 11:39:44.165" endtime="20220214 11:39:44.251"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>DateOfBirthMonth</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220214 11:39:44.251" endtime="20220214 11:39:44.269"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>DateOfBirthMonth</arg>
+<arg>January</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20220214 11:39:44.269" level="INFO">Selecting options from selection list 'DateOfBirthMonth' by label January.</msg>
+<status status="PASS" starttime="20220214 11:39:44.269" endtime="20220214 11:39:44.331"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>DateOfBirthYear</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220214 11:39:44.331" endtime="20220214 11:39:44.349"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>DateOfBirthYear</arg>
+<arg>1925</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20220214 11:39:44.350" level="INFO">Selecting options from selection list 'DateOfBirthYear' by label 1925.</msg>
+<status status="PASS" starttime="20220214 11:39:44.350" endtime="20220214 11:39:44.410"/>
+</kw>
+<kw name="Generate random number">
+<var>${random_number}</var>
+<kw name="Generate Random String" library="String">
+<var>${random_number}</var>
+<arg>4</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20220214 11:39:44.411" level="INFO">${random_number} = 1577</msg>
+<status status="PASS" starttime="20220214 11:39:44.411" endtime="20220214 11:39:44.411"/>
+</kw>
+<msg timestamp="20220214 11:39:44.412" level="INFO">${random_number} = 1577</msg>
+<status status="PASS" starttime="20220214 11:39:44.410" endtime="20220214 11:39:44.412"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>Email</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220214 11:39:44.412" endtime="20220214 11:39:44.430"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>Email</arg>
+<arg>Saleh${random_number}@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220214 11:39:44.431" level="INFO">Typing text 'Saleh1577@gmail.com' into text field 'Email'.</msg>
+<status status="PASS" starttime="20220214 11:39:44.431" endtime="20220214 11:39:44.523"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>Company</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220214 11:39:44.523" endtime="20220214 11:39:44.543"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>Company</arg>
+<arg>Mic</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220214 11:39:44.543" level="INFO">Typing text 'Mic' into text field 'Company'.</msg>
+<status status="PASS" starttime="20220214 11:39:44.543" endtime="20220214 11:39:44.634"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>Password</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220214 11:39:44.634" endtime="20220214 11:39:44.652"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>Password</arg>
+<arg>Saleh@9827</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220214 11:39:44.652" level="INFO">Typing text 'Saleh@9827' into text field 'Password'.</msg>
+<status status="PASS" starttime="20220214 11:39:44.652" endtime="20220214 11:39:44.754"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>ConfirmPassword</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220214 11:39:44.754" endtime="20220214 11:39:44.772"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>ConfirmPassword</arg>
+<arg>Saleh@9827</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220214 11:39:44.773" level="INFO">Typing text 'Saleh@9827' into text field 'ConfirmPassword'.</msg>
+<status status="PASS" starttime="20220214 11:39:44.773" endtime="20220214 11:39:44.851"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>register-button</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220214 11:39:44.851" endtime="20220214 11:39:44.870"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
-<arg>//button[@class='button-1 login-button']</arg>
+<arg>register-button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220214 11:34:49.391" level="INFO">Clicking button '//button[@class='button-1 login-button']'.</msg>
-<status status="PASS" starttime="20220214 11:34:49.391" endtime="20220214 11:34:50.420"/>
+<msg timestamp="20220214 11:39:44.871" level="INFO">Clicking button 'register-button'.</msg>
+<status status="PASS" starttime="20220214 11:39:44.870" endtime="20220214 11:39:45.945"/>
 </kw>
-<status status="PASS" starttime="20220214 11:34:49.164" endtime="20220214 11:34:50.421"/>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Your registration completed</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220214 11:39:45.958" level="INFO">Current page contains text 'Your registration completed'.</msg>
+<status status="PASS" starttime="20220214 11:39:45.946" endtime="20220214 11:39:45.958"/>
 </kw>
-<status status="PASS" starttime="20220214 11:34:49.163" endtime="20220214 11:34:50.421"/>
-</kw>
-<kw name="Confim message has appeared" library="Login_Keyword">
-<kw name="Error_Message" library="Login_PageObjects">
-<kw name="Wait Until Page Contains" library="SeleniumLibrary">
-<arg>Login was unsuccessful. Please correct the errors and try again.</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20220214 11:34:50.422" endtime="20220214 11:34:50.545"/>
-</kw>
-<status status="PASS" starttime="20220214 11:34:50.422" endtime="20220214 11:34:50.545"/>
-</kw>
-<status status="PASS" starttime="20220214 11:34:50.421" endtime="20220214 11:34:50.545"/>
-</kw>
-<doc>Login with invalid Crea</doc>
-<status status="PASS" starttime="20220214 11:34:44.942" endtime="20220214 11:34:50.546"/>
+<status status="PASS" starttime="20220214 11:39:38.582" endtime="20220214 11:39:45.958"/>
 </test>
-<kw name="End Web Test" library="Preference_Keyword" type="TEARDOWN">
-<kw name="Close All Browsers" library="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20220214 11:34:50.555" endtime="20220214 11:34:50.724"/>
-</kw>
-<status status="PASS" starttime="20220214 11:34:50.554" endtime="20220214 11:34:50.724"/>
-</kw>
-<status status="PASS" starttime="20220214 11:34:42.369" endtime="20220214 11:34:50.724"/>
+<doc>This test suite is not using page object approach</doc>
+<status status="PASS" starttime="20220214 11:39:38.323" endtime="20220214 11:39:45.959"/>
 </suite>
 <statistics>
 <total>
@@ -130,7 +192,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Login Suite">Login Suite</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Registration Suite NonePo">Registration Suite NonePo</stat>
 </suite>
 </statistics>
 <errors>

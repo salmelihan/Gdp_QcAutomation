@@ -5,10 +5,10 @@ Library          SeleniumLibrary
 Resource    ../Resources/Keywords/Preference_Keyword.robot
 Resource    ../Resources/Keywords/Shared_Keywoords.robot
 Resource    ../Resources/Keywords/Registration_Keyword.robot
-
 Suite Setup     Begin web Test
 Suite Teardown     End Web Test
 
+Documentation       This test suite is using page object model approach
 *** Test Cases ***
 Test Case 1
     [Documentation]        Confimre vaidion appreaes
