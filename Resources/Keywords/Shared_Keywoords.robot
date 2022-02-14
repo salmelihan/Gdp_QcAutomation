@@ -1,6 +1,9 @@
 *** Settings ***
 Library          SeleniumLibrary
 
+
+Resource        ../pageObjects/HomePage.robot
+
 Variables       ../Project_Configration/Test_Configration.yaml
 
 
@@ -10,5 +13,4 @@ Navigate to Home page
 
 
 Navigate to Login page
-    wait until page contains                 Log in
-    click link                  Log in
+    Login_Link

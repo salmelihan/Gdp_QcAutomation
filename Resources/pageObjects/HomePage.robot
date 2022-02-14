@@ -2,6 +2,6 @@
 Library  SeleniumLibrary
 
 *** Keywords ***
-Username_TextBox
-    wait until element is visible         Email
-    input text    Email      saleh@test.com
+Login_Link
+    wait until page contains                 Log in
+    click link                  Log in
