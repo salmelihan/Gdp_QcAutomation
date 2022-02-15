@@ -57,6 +57,7 @@ You need to download Chrome driver.
 - [Robot Framework documentation](https://robotframework.org/robotframework/#user-guide)
 - [Robot Framework Selenium documentation](https://robotframework.org/SeleniumLibrary/SeleniumLibrary.html)
 - [How to Find & Write Text, Contains, OR, AND](https://www.guru99.com/xpath-selenium.html)
+- [Test Automation University](https://testautomationu.applitools.com/)
 
 
 ## Author
